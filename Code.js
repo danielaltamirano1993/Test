@@ -8,7 +8,7 @@ function getData(spreadsheetid, sheet) {
     return {error: 'No hay datos'}
   }//En el caso de que exista, recorremos las filas de la hoja de calculo
     else{
-      var responsejson = []
+      var responsejson = [];
     //Recorremos desde la fila 1, hasta la columna Z por posibles datos
     for (var row=1; row <values.length; row++){
       var item ={};
