@@ -5,7 +5,7 @@ function getData(spreadsheetid, sheet) {
   var values = Sheets.Spreadsheets.Values.get(spreadsheetid, rangename).values;
   //Comprobando que exista la variable values
   if(!values){
-    return {error: 'No hay datos'};
+    return {error: 'No hay datos'}
   }//En el caso de que exista, recorremos las filas de la hoja de calculo
     else{
       var responsejson = []
